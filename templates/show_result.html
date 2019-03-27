@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% if result %}
+    <em style='color: green; font-size: 2em;'> {{ result }} </em>
+{% endif %}
+<br>
+<br>
+Curious to learn more?
+<form action="/choice">
+    <input type="submit" value="Yes">
+</form>
+
+{% endblock %}

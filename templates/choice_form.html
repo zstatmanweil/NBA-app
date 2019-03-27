@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% if first_table and first_question  %}
+    <h1>Here are the number of players still in the league
+        from each draft year as of 2017:</h1>
+    {{ first_table | safe }}
+    <br>
+    <h1>{{ first_question }}</h1>
+    
+{% else %}
+    <h1>Do you want to see another year? If so, type that year. 
+        Do you want to see which year and round a specific player 
+        was drafted? If so, type that player's name.  </h1>
+{% endif %}
+
+<form action="/result" method="POST">
+    Your choice: <input type="text" name="choice">
+    <br>
+    <br>
+    <input type="submit">
+</form>
+
+{% endblock %}

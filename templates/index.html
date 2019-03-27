@@ -1,15 +1,11 @@
 {% extends "layout.html" %}
 
 {% block content %}
-{% if greeting %}
-    <h1>I just wanted to say</h1>
-    <em style='color: green; font-size: 2em;'> {{ greeting }} </em>
-{% else %}
-        <em>Hello</em>, world!
-{% endif %}
 
-<form action="/hello">
-    <input type="submit" value="fill out form again">
+<h1>Want to learn about the NBA?</h1>
+
+<form action="/start">
+    <input type="submit" value="Yes!">
 </form>
 
 {% endblock %}
