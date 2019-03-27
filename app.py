@@ -3,8 +3,8 @@ from flask import render_template
 import json
 from nba.app_functions import display_table, convert_to_players, users_choice
 
-#npaplayers.json found here: http://data.nba.net/10s/prod/v1/2017/players.json
-json_file = open('./data/nbaplayers.json')
+#npaplayers.json found here: http://data.nba.net/10s/prod/v1/2018/players.json
+json_file = open('./data/2019nbaplayers.json')
 json_str = json_file.read()
 json_data = json.loads(json_str)
 
@@ -23,9 +23,9 @@ def index():
 @app.route("/start", methods=['GET'])
 def start():
     first_table = display_table(players_list)
-    first_question = """\nAre you curious which players were drafted in a specific year? Of \
+    first_question = """Are you curious which players were drafted in a specific year? Of \
 course you are! Enter a year, and a list of players drafted that year will be provided."""
-
+  
     return render_template('choice_form.html', first_table=first_table.to_html(), first_question=first_question)
 
 @app.route("/choice", methods=['GET'])

@@ -3,16 +3,16 @@
 {% block content %}
 
 {% if first_table and first_question  %}
-    <h1>Here are the number of players still in the league
-        from each draft year as of 2017:</h1>
+    <h2>Here are the number of players still in the league
+        from each draft year as of March 2019:</h2>
     {{ first_table | safe }}
     <br>
-    <h1>{{ first_question }}</h1>
-    
+    <h2>{{ first_question }}</h2>
+
 {% else %}
-    <h1>Do you want to see another year? If so, type that year. 
+    <h2>Do you want to see another year? If so, type that year. 
         Do you want to see which year and round a specific player 
-        was drafted? If so, type that player's name.  </h1>
+        was drafted? If so, type that player's name.  </h2>
 {% endif %}
 
 <form action="/result" method="POST">
