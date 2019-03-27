@@ -2,3 +2,7 @@ nba/__pycache__/
 tests/__pycache__/
 __pycache__/
 setup.py
+tests/a_tests_app.py
+static/echoes
+data/
+NBA-app.code-workspace
