@@ -88,7 +88,7 @@ def users_choice(players_list, user_choice):
         if players:
             result = "\n" + ", ".join(map(lambda p: p.full_name(), players))
         else:
-            result = f"\nNo one drafted in {choice} was in the NBA as of 2017"
+            result = f"\nNo one drafted in {choice.user_choice} was in the NBA as of 2019"
 
     elif choice.is_year_prior_NBA():
         result = "\nThat is prior to the NBA's existance"
@@ -98,7 +98,7 @@ def users_choice(players_list, user_choice):
         if player:
             result = player.draft_info()
         else:
-            result = f"\n{choice.user_choice.title()} wasn't active in the NBA in 2017."
+            result = f"\n{choice.user_choice.title()} wasn't active in the NBA in 2019."
 
     else:
         result = "Try again!"

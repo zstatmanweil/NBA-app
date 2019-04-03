@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask, session, redirect, url_for, escape, request
 from flask import render_template
 import json
@@ -40,4 +41,4 @@ def result():
     return render_template('show_result.html', result=result)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
