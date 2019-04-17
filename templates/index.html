@@ -1,11 +1,15 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<body background="../static/img/NBA.JPG">
-<h1>Want to learn about the NBA?</h1>
 
-<form action="/start">
-    <input type="submit" value="Yes!">
-</form>
+<body background="/static/img/NBA.JPG">
+
+    <div class="container">
+        <div class="jumbotron-fluid text-center">
+            <h1><em>Want to learn about the NBA?</em></h1>
+            <a href='/start' class="btn btn-primary">Yes!</a>
+        </div>
+    </div>
+
 </body>
 {% endblock %}

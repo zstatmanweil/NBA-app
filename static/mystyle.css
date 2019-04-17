@@ -1,0 +1,11 @@
+.jumbotron-fluid {
+    padding: 0.5rem 1rem;
+    background-color: #e8f0f7;
+    margin-top: 10pt;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2161a6;
+    border-color: #007bff;
+}
